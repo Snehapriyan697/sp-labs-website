@@ -4,7 +4,7 @@ import { Code2, Zap, Shield, Target } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn more about SP Labs, an independent developer specializing in custom software and AI automation.",
+  description: "Learn more about SP LABS, an independent developer specializing in custom software and AI automation.",
 };
 
 const values = [
@@ -40,7 +40,7 @@ export default function AboutPage() {
               Engineering <span className="text-blue-600">Growth.</span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              I am the developer behind SP Labs, an independent studio specializing in building high-performance websites, custom software, and AI automation systems for ambitious businesses.
+              I am the developer behind SP LABS, an independent studio specializing in building high-performance websites, custom software, and AI automation systems for ambitious businesses.
             </p>
           </div>
         </div>

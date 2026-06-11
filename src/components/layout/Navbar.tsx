@@ -24,7 +24,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <span className="font-bold text-xl tracking-tight text-slate-900">
-            SP Labs<span className="text-blue-600">.</span>
+            SP LABS<span className="text-blue-600">.</span>
           </span>
         </Link>
 
