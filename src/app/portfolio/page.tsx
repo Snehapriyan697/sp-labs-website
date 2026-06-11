@@ -6,7 +6,7 @@ import { ExternalLink, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Explore our recent case studies and projects delivered by Snehapriyan Digital Solutions.",
+  description: "Explore our recent case studies and projects delivered by SP Labs.",
 };
 
 const allProjects = [

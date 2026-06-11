@@ -16,18 +16,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Snehapriyan Digital Solutions | Premium Web & App Development",
-    template: "%s | Snehapriyan Digital Solutions",
+    default: "SP Labs | Premium Web & App Development",
+    template: "%s | SP Labs",
   },
   description: "Freelance agency providing top-tier web development, app development, AI automation, and custom business software for modern companies.",
   keywords: ["web development", "app development", "AI automation", "SaaS", "freelance agency", "custom software"],
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://snehapriyan.com",
-    title: "Snehapriyan Digital Solutions",
+    url: "https://splabs.com",
+    title: "SP Labs",
     description: "Premium Web & App Development, AI Automation, and Custom Software.",
-    siteName: "Snehapriyan Digital Solutions",
+    siteName: "SP Labs",
   },
 };
 
@@ -52,17 +52,17 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "WebSite",
-                  "@id": "https://snehapriyan.com/#website",
-                  "url": "https://snehapriyan.com",
-                  "name": "Snehapriyan Digital Solutions",
+                  "@id": "https://splabs.com/#website",
+                  "url": "https://splabs.com",
+                  "name": "SP Labs",
                   "description": "Premium Web & App Development, AI Automation, and Custom Software."
                 },
                 {
                   "@type": "ProfessionalService",
-                  "@id": "https://snehapriyan.com/#organization",
-                  "name": "Snehapriyan Digital Solutions",
-                  "url": "https://snehapriyan.com",
-                  "logo": "https://snehapriyan.com/logo.png",
+                  "@id": "https://splabs.com/#organization",
+                  "name": "SP Labs",
+                  "url": "https://splabs.com",
+                  "logo": "https://splabs.com/logo.png",
                   "description": "Independent Developer specializing in custom web applications, billing software, and n8n automation."
                 }
               ]

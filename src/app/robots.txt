@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://snehapriyan.com/sitemap.xml
+Sitemap: https://splabs.com/sitemap.xml

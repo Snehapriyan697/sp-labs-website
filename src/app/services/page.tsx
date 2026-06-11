@@ -4,7 +4,7 @@ import { Laptop, Code2, FileText, Database, Calendar, BarChart3, Settings2, Bot,
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Comprehensive software development, app development, and AI automation services by Snehapriyan Digital Solutions.",
+  description: "Comprehensive software development, app development, and AI automation services by SP Labs.",
 };
 
 const detailedServices = [

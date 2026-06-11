@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1 space-y-4">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl tracking-tight text-slate-900">
-                Snehapriyan<span className="text-blue-600">.</span>
+              <span className="font-bold text-2xl tracking-tight text-slate-900">
+                SP Labs<span className="text-blue-600">.</span>
               </span>
             </Link>
             <p className="text-sm">
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Snehapriyan Digital Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SP Labs. All rights reserved.</p>
           <div className="flex space-x-4">
             <Link href="#" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
