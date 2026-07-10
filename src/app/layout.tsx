@@ -1,34 +1,17 @@
 import type { Metadata } from "next";
-import { Outfit, Geist_Mono } from "next/font/google";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "SP LABS | Premium Web & App Development",
-    template: "%s | SP LABS",
-  },
-  description: "Freelance agency providing top-tier web development, app development, AI automation, and custom business software for modern companies.",
-  keywords: ["web development", "app development", "AI automation", "SaaS", "freelance agency", "custom software"],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://splabs.com",
-    title: "SP LABS",
-    description: "Premium Web & App Development, AI Automation, and Custom Software.",
-    siteName: "SP LABS",
-  },
+  title: "Nexus Gaming",
+  description: "Futuristic full-stack gaming platform with live leaderboards, XP, and achievements.",
 };
 
 export default function RootLayout({
@@ -37,38 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${geistMono.variable} h-full antialiased scroll-smooth dark`}>
-      <body className="min-h-full flex flex-col font-sans bg-[#0a0a0a] text-white selection:bg-blue-500/30 selection:text-white">
+    <html lang="en" className={`${inter.variable} dark`}>
+      <body className="flex flex-col min-h-screen pt-16">
         <Navbar />
-        <main className="flex-1 flex flex-col overflow-x-hidden w-full max-w-full">
+        <main className="flex-grow flex flex-col relative z-10">
           {children}
         </main>
         <Footer />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "WebSite",
-                  "@id": "https://splabs.com/#website",
-                  "url": "https://splabs.com",
-                  "name": "SP LABS",
-                  "description": "Premium Web & App Development, AI Automation, and Custom Software."
-                },
-                {
-                  "@type": "ProfessionalService",
-                  "@id": "https://splabs.com/#organization",
-                  "name": "SP LABS",
-                  "url": "https://splabs.com",
-                  "logo": "https://splabs.com/logo.png",
-                  "description": "Independent Developer specializing in custom web applications, billing software, and n8n automation."
-                }
-              ]
-            })
-          }}
-        />
+        
+        {/* Background glow effects */}
+        <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-neon-purple/5 blur-[150px]" />
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] rounded-full bg-neon-blue/5 blur-[150px]" />
+        </div>
       </body>
     </html>
   );

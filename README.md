@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nexus Gaming Platform
 
-## Getting Started
+A futuristic, full-stack gaming platform built with Next.js, React, Tailwind CSS, Framer Motion, and Supabase.
 
-First, run the development server:
+## Features
+- **Modern UI**: Neon effects, glassmorphism, and smooth page transitions with Framer Motion.
+- **Authentication**: Full login and registration system powered by Supabase Auth.
+- **User Profiles & Dashboards**: View user stats, XP, and Nexus coins.
+- **Game Library**: 
+  - 🐍 Snake
+  - ⭕ Tic Tac Toe
+  - 🔢 2048
+  - 🃏 Memory Match
+- **Leaderboards**: Global ranking system for all games.
+- **Admin Panel**: Management dashboard for system administrators.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- **Frontend**: Next.js 15 (App Router), React, TypeScript
+- **Styling**: Tailwind CSS v4, Framer Motion, Lucide React
+- **Backend & DB**: Supabase (PostgreSQL, Auth)
+- **Deployment**: Ready for Vercel
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Supabase Configuration**
+   - Create a project on [Supabase](https://supabase.com).
+   - Copy the `.env.example` to `.env.local` and add your Supabase URL and Anon Key:
+     ```env
+     NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+     ```
+   - Run the SQL commands in `database_schema.sql` in your Supabase SQL Editor to create the necessary tables.
 
-## Learn More
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+## Architecture & Code Structure
+- `src/app`: Next.js App Router pages and layouts.
+- `src/components`: Reusable UI and Game wrapper components.
+- `src/utils/supabase`: Supabase SSR and Client utilities.
+- `src/app/globals.css`: Custom utility classes for neon and glassmorphism styles.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+MIT
